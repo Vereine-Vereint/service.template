@@ -21,6 +21,7 @@ cmd_example() {
 # ATTACHMENTS
 att_preStart() {
   # execute before starting the service
+  echo "Pre Start"
 }
 
 att_configure() {
