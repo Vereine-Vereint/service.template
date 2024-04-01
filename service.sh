@@ -13,6 +13,12 @@ source ./core/core.sh
 # BORG
 source ./borg/borg.sh
 
+
+# VARIABLES
+set -o allexport
+# set variables for docker or other services here
+set +o allexport
+
 # COMMANDS
 
 # This is an example command that prints a message from the first argument
