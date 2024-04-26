@@ -20,3 +20,8 @@ services:
     networks:
     - traefik # add to traefik network
     - default # add to default (stack internal) network
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.EXAMPLE.rule=Host(`${WHOIS_DOMAIN}`)"
+      - "traefik.http.routers.EXAMPLE.entrypoints=websecure"
